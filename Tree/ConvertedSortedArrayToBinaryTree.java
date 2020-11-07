@@ -20,9 +20,9 @@ public TreeNode sortedArrayToBST(int[] nums) {
             return null;
         
         return buildBinaryTree(nums,0,nums.length-1);
-    }
-    
-    public static TreeNode buildBinaryTree(int[] nums,int low,int high){
+}
+
+public static TreeNode buildBinaryTree(int[] nums,int low,int high){
         if(low>high)
             return null;
         
@@ -32,4 +32,4 @@ public TreeNode sortedArrayToBST(int[] nums) {
         node.right=buildBinaryTree(nums,mid+1,high);
         
         return node;      
-    }
+}
